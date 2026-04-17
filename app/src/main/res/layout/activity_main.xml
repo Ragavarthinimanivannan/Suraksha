@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- SOS Button -->
+        <Button
+            android:id="@+id/sosButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SOS"/>
+
+        <!-- Add Contact -->
+        <Button
+            android:id="@+id/addContactButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Emergency Contact"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Share Live Location -->
+        <Button
+            android:id="@+id/shareLocationButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Share Live Location"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Record Video -->
+        <Button
+            android:id="@+id/recordButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Record Video"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Safety Check-in Timer -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Safety Check-in Timer"
+            android:textSize="16sp"
+            android:paddingTop="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="8dp"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/checkin10Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 min"/>
+
+            <Button
+                android:id="@+id/checkin15Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15 min"
+                android:layout_marginStart="8dp"/>
+
+            <Button
+                android:id="@+id/checkin20Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20 min"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <!-- Check-in Button -->
+        <Button
+            android:id="@+id/checkinButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Check-in"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Emergency Contacts RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/contactsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginTop="16dp"
+            android:paddingTop="8dp"/>
+    </LinearLayout>
+</ScrollView>
